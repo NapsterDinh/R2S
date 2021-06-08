@@ -1,0 +1,179 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/AddModuleTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_marginBottom="0dp"
+            android:text="Add Class"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="Class Name"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/edt_ClassName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/edittext_border"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            app:backgroundTint="@null" />
+
+        <TextView
+            android:id="@+id/validateClassName"
+            android:layout_width="391dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:textColor="@color/red"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="Capacity"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/edt_Capacity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/edittext_border"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            app:backgroundTint="@null" />
+
+        <TextView
+            android:id="@+id/validateCapacity"
+            android:layout_width="391dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:textColor="@color/red"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="Start Date"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/btn_StartDate"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/backgroup_button"
+            android:drawableEnd="@drawable/ic_baseline_calendar_today_24"
+            android:drawableRight="@drawable/ic_baseline_calendar_today_24"
+            android:gravity=""
+            android:text="dd/mm/yyyy"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            app:backgroundTint="@color/design_default_color_background" />
+
+        <TextView
+            android:id="@+id/validateStartDate"
+            android:layout_width="391dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:textColor="@color/red"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="End Date"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/btn_EndDate"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/backgroup_button"
+            android:backgroundTint="@color/white"
+            android:drawableRight="@drawable/ic_baseline_calendar_today_24"
+            android:gravity=""
+            android:text="dd/mm/yyyy"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/validateEndDate"
+            android:layout_width="391dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:textColor="@color/red"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSaveClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toLeftOf="@id/btnBackClass"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:backgroundTint="#1E90FF"
+        />
+    <Button
+        android:id="@+id/btnBackClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:text="Back"
+        android:textColor="@color/white"
+        android:backgroundTint="#ff3b3b"
+        android:layout_below="@id/linear"/>
+</RelativeLayout>

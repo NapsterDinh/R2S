@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="orange">#FD3C01</color>
+    <color name="ping_background_item">#FDEACC</color>
+    <color name="green_edit">#33FE45</color>
+    <color name="red">#FF0600</color>
+    <color name="sky_blue">#3470FA</color>
+    <color name="background_contact">#F7E488</color>
+    <color name="gray_edt_disable">#EBEBEB</color>
+    <color name="none"></color>
+    <color name="strongly_disagree">#F7C1B5</color>
+    <color name="disagree">#F5907A</color>
+    <color name="neutral">#FF6745</color>
+    <color name="agree">#FD7D55</color>
+    <color name="strongly_agree">#FD3C01</color>
+</resources>

@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="390dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:stretchColumns="*"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_marginTop="10dp"
+                android:layout_span="5"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/title_comment_result"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </TableRow>
+        <!-- First row has 5 columns -->
+        <TableRow android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="54dp"
+                android:layout_column="0"
+                android:gravity="center_horizontal"
+                android:text="@string/strongly_disagree"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_column="1"
+                android:gravity="center"
+                android:text="Disagree"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_column="2"
+                android:gravity="center"
+                android:text="Neutral"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_column="3"
+                android:gravity="center"
+                android:text="Agree"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="44dp"
+                android:layout_column="4"
+                android:gravity="center"
+                android:text="@string/strongly_agree"
+                android:textColor="@color/black" />
+        </TableRow>
+
+    </TableLayout>
+
+    <ScrollView
+        android:layout_width="415dp"
+        android:layout_height="476dp"
+        android:layout_marginTop="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableLayout
+            android:layout_width="385dp"
+            android:layout_height="wrap_content"
+            android:background="@color/ping_background_item"
+            android:stretchColumns="*"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="13dp">
+            <!-- Second row has 3 columns -->
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textView242"
+                    android:layout_marginTop="10dp"
+                    android:layout_span="5"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="TRAINING COURSE FEEDBACK FORM"
+                    android:textColor="@color/orange"
+                    android:textSize="14sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textView243"
+                    android:layout_marginTop="10dp"
+                    android:layout_span="5"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="LESSON EVALUATION"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/textView241"
+                    android:layout_span="5"
+                    android:fontFamily="serif"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="B. DETAIL EVALUATION"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/textView244"
+                    android:layout_span="5"
+                    android:fontFamily="serif"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="I. Training program &amp; content"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/textView259"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_span="5"
+                    android:fontFamily="serif"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="- The training objective"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="54dp"
+                    android:layout_column="0"
+                    android:gravity="center_horizontal"
+                    android:text="50%"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:gravity="center_horizontal"
+                    android:text="0%"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_column="2"
+                    android:gravity="center_horizontal"
+                    android:text="0%"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_column="3"
+                    android:gravity="center_horizontal"
+                    android:text="0%"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_column="4"
+                    android:gravity="center_horizontal"
+                    android:text="100%"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/textView258"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_span="5"
+                    android:fontFamily="serif"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="- The module is useful for my work"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="54dp"
+                    android:layout_column="0"
+                    android:gravity="center_horizontal"
+                    android:text="50%"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:gravity="center_horizontal"
+                    android:text="0%"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_column="2"
+                    android:gravity="center_horizontal"
+                    android:text="0%"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_column="3"
+                    android:gravity="center_horizontal"
+                    android:text="0%"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_column="4"
+                    android:gravity="center_horizontal"
+                    android:text="100%"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/textView249"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_span="5"
+                    android:fontFamily="serif"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="- The material distributed were pertinent and helpful"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+            </TableRow>
+
+            <TableRow android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="54dp"
+                    android:layout_column="0"
+                    android:gravity="center_horizontal"
+                    android:text="50%"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:gravity="center_horizontal"
+                    android:text="0%"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_column="2"
+                    android:gravity="center_horizontal"
+                    android:text="0%"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_column="3"
+                    android:gravity="center_horizontal"
+                    android:text="0%"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_column="4"
+                    android:gravity="center_horizontal"
+                    android:text="100%"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="54dp"
+                    android:layout_column="0"
+                    android:gravity="center_horizontal"
+                    android:text="50%"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:gravity="center_horizontal"
+                    android:text="0%"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_column="2"
+                    android:gravity="center_horizontal"
+                    android:text="0%"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_column="3"
+                    android:gravity="center_horizontal"
+                    android:text="0%"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_column="4"
+                    android:gravity="center_horizontal"
+                    android:text="100%"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/textView264"
+                    android:layout_span="5"
+                    android:fontFamily="serif"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="II. Trainer/ Coach"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/textView269"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_span="5"
+                    android:fontFamily="serif"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="- The trainer is instruction were clear and understandable"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="54dp"
+                    android:layout_column="0"
+                    android:gravity="center_horizontal"
+                    android:text="50%"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:gravity="center_horizontal"
+                    android:text="0%"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_column="2"
+                    android:gravity="center_horizontal"
+                    android:text="0%"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_column="3"
+                    android:gravity="center_horizontal"
+                    android:text="0%"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_column="4"
+                    android:gravity="center_horizontal"
+                    android:text="100%"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="54dp"
+                    android:layout_column="0"
+                    android:gravity="center_horizontal"
+                    android:text="50%"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:gravity="center_horizontal"
+                    android:text="0%"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_column="2"
+                    android:gravity="center_horizontal"
+                    android:text="0%"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_column="3"
+                    android:gravity="center_horizontal"
+                    android:text="0%"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_column="4"
+                    android:gravity="center_horizontal"
+                    android:text="100%"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/textView164"
+                    android:layout_span="5"
+                    android:fontFamily="serif"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="III. Course Organization"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/textView169"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_span="5"
+                    android:fontFamily="serif"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="- The class Admin was supportive and helpful"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="54dp"
+                    android:layout_column="0"
+                    android:gravity="center_horizontal"
+                    android:text="50%"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:gravity="center_horizontal"
+                    android:text="0%"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_column="2"
+                    android:gravity="center_horizontal"
+                    android:text="0%"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_column="3"
+                    android:gravity="center_horizontal"
+                    android:text="0%"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_column="4"
+                    android:gravity="center_horizontal"
+                    android:text="100%"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="54dp"
+                    android:layout_column="0"
+                    android:gravity="center_horizontal"
+                    android:text="50%"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:gravity="center_horizontal"
+                    android:text="0%"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_column="2"
+                    android:gravity="center_horizontal"
+                    android:text="0%"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_column="3"
+                    android:gravity="center_horizontal"
+                    android:text="0%"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_column="4"
+                    android:gravity="center_horizontal"
+                    android:text="100%"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/textView64"
+                    android:layout_span="5"
+                    android:fontFamily="serif"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="IV. Other"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/textView69"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_span="5"
+                    android:fontFamily="serif"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="- What did you like most about topic/ Module ?"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="54dp"
+                    android:layout_column="0"
+                    android:gravity="center_horizontal"
+                    android:text="50%"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:gravity="center_horizontal"
+                    android:text="0%"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_column="2"
+                    android:gravity="center_horizontal"
+                    android:text="0%"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_column="3"
+                    android:gravity="center_horizontal"
+                    android:text="0%"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_column="4"
+                    android:gravity="center_horizontal"
+                    android:text="100%"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="54dp"
+                    android:layout_column="0"
+                    android:gravity="center_horizontal"
+                    android:text="50%"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:gravity="center_horizontal"
+                    android:text="0%"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_column="2"
+                    android:gravity="center_horizontal"
+                    android:text="0%"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_column="3"
+                    android:gravity="center_horizontal"
+                    android:text="0%"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_column="4"
+                    android:gravity="center_horizontal"
+                    android:text="100%"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="54dp"
+                    android:layout_column="0"
+                    android:gravity="center_horizontal"
+                    android:text="50%"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:gravity="center_horizontal"
+                    android:text="0%"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_column="2"
+                    android:gravity="center_horizontal"
+                    android:text="0%"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_column="3"
+                    android:gravity="center_horizontal"
+                    android:text="0%"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_column="4"
+                    android:gravity="center_horizontal"
+                    android:text="100%"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+
+        </TableLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

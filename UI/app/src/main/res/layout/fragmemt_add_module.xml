@@ -1,0 +1,272 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:layout_above="@+id/btnSaveClass"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/AddModuleTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="0dp"
+            android:layout_marginBottom="0dp"
+            android:text="Add Module"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="Module Name"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/edt_ModuleName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edittext_border"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            app:backgroundTint="@null" />
+
+        <TextView
+            android:id="@+id/validateModuleName"
+            android:layout_width="391dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:textColor="@color/red"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="Start Date"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_StartDate"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/backgroup_button"
+            android:drawableEnd="@drawable/ic_baseline_calendar_today_24"
+            android:drawableRight="@drawable/ic_baseline_calendar_today_24"
+            android:gravity=""
+            android:text="dd/mm/yyyy"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            app:backgroundTint="@color/design_default_color_background" />
+
+        <TextView
+            android:id="@+id/validateStartDate"
+            android:layout_width="391dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:textColor="@color/red"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="End Date"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_EndDate"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/backgroup_button"
+            android:backgroundTint="@color/white"
+            android:drawableRight="@drawable/ic_baseline_calendar_today_24"
+            android:gravity=""
+            android:text="dd/mm/yyyy"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/validateEndDate"
+            android:layout_width="391dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:textColor="@color/red"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="Admin ID"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <Spinner
+            android:id="@+id/spinnerAdminID"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edittext_border"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="Feedback Title"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <Spinner
+            android:id="@+id/spinnerFeedbackTitle"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edittext_border" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="Feedback Start Date"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_FeedbackStartDate"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/backgroup_button"
+            android:drawableEnd="@drawable/ic_baseline_calendar_today_24"
+            android:drawableRight="@drawable/ic_baseline_calendar_today_24"
+            android:gravity=""
+            android:text="dd/mm/yyyy"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            app:backgroundTint="@color/design_default_color_background" />
+
+        <TextView
+            android:id="@+id/validateFeedbackStartDate"
+            android:layout_width="391dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:textColor="@color/red"
+            android:textSize="12sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="Feedback End Date"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_FeedbackEndDate"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/backgroup_button"
+            android:drawableEnd="@drawable/ic_baseline_calendar_today_24"
+            android:drawableRight="@drawable/ic_baseline_calendar_today_24"
+            android:gravity=""
+            android:text="dd/mm/yyyy"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            app:backgroundTint="@color/design_default_color_background" />
+
+        <TextView
+            android:id="@+id/validateFeedbackEndDate"
+            android:layout_width="391dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:textColor="@color/red"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSaveModule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toLeftOf="@id/btnBackModule"
+        android:backgroundTint="#1E90FF"
+        android:text="Save"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnBackModule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="#ff3b3b"
+        android:text="Back"
+        android:textColor="@color/white" />
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="367dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/background_item"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="39dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="72dp"
+            android:background="@drawable/background_item_button_edit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.911"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_edit_24"
+            tools:ignore="VectorDrawableCompat"
+
+            />
+
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="41dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/background_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.92"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_edit_24"
+            tools:ignore="VectorDrawableCompat"
+
+            />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="42dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="296dp"
+            android:layout_marginLeft="296dp"
+            android:layout_marginTop="116dp"
+            android:background="@drawable/background_item_button_delete"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_restore_from_trash_24"
+            tools:ignore="VectorDrawableCompat" />
+
+        <LinearLayout
+            android:layout_width="298dp"
+            android:layout_height="174dp"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.267"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:id="@+id/txtModuleName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trainee ID: "
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txtClassName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trainee Name: "
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txtTrainerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Class ID: "
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txtRegistrationCode"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:text="Class Name: "
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

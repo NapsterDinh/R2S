@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">R2S Calendar</string>
+    <string name="search">Search</string>
+    <string name="menu_home">HOME PAGE</string>
+    <string name="menu_assignment">ASSIGNMENT</string>
+    <string name="menu_class">CLASS </string>
+    <string name="menu_module">MODULE</string>
+    <string name="menu_enrollment">ENROLLMENT </string>
+    <string name="menu_feedback">FEEDBACK </string>
+    <string name="menu_result">RESULT </string>
+    <string name="menu_question">QUESTION </string>
+    <string name="menu_contact">CONTACT </string>
+    <string name="menu_join">JOIN </string>
+    <string name="menu_logout">LOG OUT</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="add_success">Add success!</string>
+    <string name="success">Success!</string>
+    <string name="ok">OK</string>
+    <string name="assignment_exist">Assignment already exist!!!</string>
+    <string name="are_you_sure">Are you sure ?</string>
+    <string name="do_you_delete">Do you want to delete this Assignment ?</string>
+    <string name="assignment_violate_constraint">An active Module and Class has been assigned to this assignment.<br>Do you really want to delete this ?</br></string>
+    <string name="title_1_statistic_overview">Feedback statistics of Class </string>
+    <string name="title_2_statistic_overview">Feedback statistics of Module </string>
+    <string name="title_1_statistics_overview_right">Training program &amp; content</string>
+    <string name="title_2_statistics_overview_right">Trainer Coach</string>
+    <string name="title_3_statistics_overview_right">Course organization</string>
+    <string name="title_4_statistics_overview_right">Other</string>
+    <string name="title_statistics_overview_right">Statistics By Topic</string>
+    <string name="title_comment_result">COMMENT RESULT</string>
+    <string name="strongly_disagree">Strongly <br>disagree</br></string>
+    <string name="strongly_agree">Strongly <br>agree</br></string>
+
+    <string name="content_1_contact">We are ready for the challenge vuhung1908@gmail.com</string>
+    <string name="content_2_contact">497 Evergreen Rd Rosevile <br>CA 95673</br> <br>+44 345 678 903</br></string>
+    <string name="content_3_contact">We are always looking for talents<br>adobexd@gmail.com</br></string>
+</resources>
